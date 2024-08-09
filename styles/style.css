@@ -111,6 +111,11 @@
 
 }
 
+img[src="images/akar-icons_search.svg"] {
+    width: 18px;
+    height: 18px;
+}
+
 img[src="images/five_stars.png"] {
     width: 103px;
     height: 18px;
