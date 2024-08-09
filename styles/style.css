@@ -380,7 +380,6 @@ h1 {
     padding: 50px 120px;
     align-items: center;
     background: #f7f7f7;
-
 }
 
 .best_sell_prod_container h2 {
@@ -445,7 +444,7 @@ h1 {
     padding: 14px 0 27px 21px;
     display: flex;
     flex-direction: column;
-    gap: 37px;
+    gap: 45px;
 }
 
 .prod_article_info div:first-of-type p {
@@ -484,3 +483,25 @@ h1 {
     left: 20px;
 }
 
+.prod_article_info div:last-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prod_article_info div:last-of-type p {
+    font-family: 'inter';
+    font-weight: 600;
+    font-size: 21px;
+    color: #0d1b39;
+}
+
+.prod_article_info div:last-of-type a {
+    display: block;
+    border-radius: 31px;
+    padding: 12px;
+    width: 48px;
+    height: 48px;
+    background: #0d1b39;
+    margin-right: 22px;
+}
