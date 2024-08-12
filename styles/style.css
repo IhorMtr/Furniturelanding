@@ -122,23 +122,28 @@ img[src="images/five_stars.png"] {
 }
 
 img[src="images/sakarias_armchair.png"] {
-    width: 218px;
-    height: 256px;
+    width: 219px;
+    height: 279px;
 }
 
 img[src="images/baltsar_chair.png"] {
-    width: 218px;
-    height: 256px;
+    width: 219px;
+    height: 274px;
 }
 
 img[src="images/anjay_chair.png"] {
-    width: 223px;
-    height: 250px;
+    width: 224px;
+    height: 278px;
 }
 
 img[src="images/nyantuy_chair.png"] {
     width: 241px;
-    height: 289px;
+    height: 290px;
+}
+
+img[src="images/rectangle_1446.jpg"] {
+    width: 602px;
+    height: 445px;
 }
 
 * {
@@ -494,6 +499,19 @@ h1 {
     font-weight: 600;
     font-size: 21px;
     color: #0d1b39;
+    position: relative;
+    margin-left: 14px;
+}
+
+.prod_article_info div:last-of-type p:before {
+    content: "$";
+    position: absolute;
+    font-family: 'inter';
+    font-weight: 600;
+    font-size: 15px;
+    color: #0d1b39;
+    left: -12px;
+    top: -1px;
 }
 
 .prod_article_info div:last-of-type a {
@@ -504,4 +522,92 @@ h1 {
     height: 48px;
     background: #0d1b39;
     margin-right: 22px;
+}
+
+.best_sell_prod_view_all {
+    margin-top: 60px;
+    font-family: 'gilroymedium';
+    font-size: 18px;
+    line-height: 185%;
+    color: #e58411;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.best_sell_prod_view_all:after {
+    content: "";
+    background-image: url("../images/grommet-icons_form-next-link.svg");
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 24px;
+    display: block;
+    margin-left: 12px;
+}
+
+.experiences {
+    padding: 240px 0 270px 0;
+}
+
+.experiences_container {
+    display: flex;
+    gap: 141px;
+    align-items: center;
+}
+
+.experiences_main_photo {
+    position: relative;
+}
+
+.experiences_container div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experiences_container div:last-of-type p:first-of-type {
+    font-family: 'gilroysemibold';
+    font-size: 18px;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    color: #e58411;
+}
+
+.experiences_container h2 {
+    font-family: 'gilroybold';
+    font-size: 42px;
+    text-transform: capitalize;
+    color: #1e1e1e;
+}
+
+.experiences_container div:last-of-type p:nth-of-type(2) {
+    font-family: 'gilroyregular';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 185%;
+    color: #1e1e1e;
+    opacity: 0.8;
+}
+
+.experiences_container div:last-of-type a {
+    font-family: 'gilroymedium';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 185%;
+    color: #e58411;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 4px;
+}
+
+.experiences_container div:last-of-type a:after {
+    content: "";
+    background-image: url("../images/grommet-icons_form-next-link.svg");
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 24px;
+    display: block;
+    margin-left: 13px;
 }
