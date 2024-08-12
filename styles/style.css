@@ -146,6 +146,41 @@ img[src="images/rectangle_1446.jpg"] {
     height: 445px;
 }
 
+img[src="images/experiences_main_photo.png"] {
+    width: 663px;
+    height: 591px;
+}
+
+img[src="images/group_48095417.png"] {
+    width: 223px;
+    height: 250px;
+}
+
+img[src="images/group_48095419.png"] {
+    width: 223px;
+    height: 338px;
+}
+
+img[src="images/group_48095439.png"] {
+    width: 370px;
+    height: 506px;
+}
+
+img[src="images/article_chair"] {
+    width: 401px;
+    height: 557px;
+}
+
+img[src="images/article_table"] {
+    width: 401px;
+    height: 557px;
+}
+
+img[src="images/article_sofa"] {
+    width: 401px;
+    height: 557px;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -547,7 +582,7 @@ h1 {
 }
 
 .experiences {
-    padding: 240px 0 270px 0;
+    padding: 240px 80px 270px 0;
 }
 
 .experiences_container {
@@ -610,4 +645,167 @@ h1 {
     height: 24px;
     display: block;
     margin-left: 13px;
+}
+
+.materials {
+    padding-left: 80px;
+    margin-bottom: 240px;
+}
+
+.materials_container {
+    display: flex;
+}
+
+.materials_info_part {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.materials_info_part p:first-of-type {
+    font-family: 'gilroysemibold';
+    font-size: 18px;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    color: #e58411;
+}
+
+.materials_info_part h2 {
+    font-family: 'gilroybold';
+    font-size: 42px;
+    text-transform: capitalize;
+    color: #1e1e1e;
+}
+
+.materials_info_part p:last-of-type {
+    font-family: 'gilroyregular';
+    font-size: 18px;
+    line-height: 185%;
+    color: #1e1e1e;
+    opacity: 0.8;
+}
+
+.materials_info_part a {
+    font-family: 'gilroymedium';
+    font-size: 14px;
+    line-height: 185%;
+    color: #e58411;
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+    text-decoration: none;
+}
+
+.materials_info_part a:after {
+    content: "";
+    background-image: url("../images/grommet-icons_form-next-link.svg");
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 24px;
+    display: block;
+    margin-left: 13px;
+}
+
+.materials_photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.materials_photos_first {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews {
+    padding: 0 80px 214px;
+}
+
+.reviews_title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.reviews_title p {
+    font-family: 'gilroysemibold';
+    font-size: 18px;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #e58411;
+}
+
+.reviews_title h2 {
+    font-family: 'gilroysemibold';
+    font-size: 42px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #1e1e1e;
+}
+
+.reviews_articles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews_articles article {
+    position: relative;
+}
+
+.reviews_text {
+    background-image: url("../images/reviews_place.svg");
+    top: 220px;
+    left: 30px;
+    position: absolute;
+    border-radius: 18px;
+    width: 334px;
+    height: 239px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.reviews_user_photo {
+    position: absolute;
+    left: 129px;
+    top: 0;
+}
+
+.reviews_text p:first-of-type {
+    font-family: 'gilroybold';
+    font-size: 18px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #1e1e1e;
+    margin-top: 24px;
+    margin-bottom: 6px;
+}
+
+.reviews_text p:nth-of-type(2) {
+    font-family: 'gilroyregular';
+    font-size: 12px;
+    text-align: center;
+    color: #1e1e1e;
+    opacity: 0.6;
+    margin-bottom: 22px;
+}
+
+.reviews_text p:last-of-type {
+    font-family: 'gilroyregular';
+    font-size: 14px;
+    text-align: center;
+    color: #1e1e1e;
+    margin-bottom: 22px;
+}
+
+.reviews_rating {
+    position: absolute;
+    bottom: 17px;
 }
