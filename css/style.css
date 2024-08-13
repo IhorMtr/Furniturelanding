@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @font-face {
     font-family: 'gilroysemibold';
@@ -718,7 +719,7 @@ h1 {
     flex-direction: column;
 }
 
-.reviews {
+.reviews_container {
     padding: 0 80px 214px;
 }
 
@@ -808,4 +809,115 @@ h1 {
 .reviews_rating {
     position: absolute;
     bottom: 17px;
+}
+
+.footer_container {
+    background: #f7f7f7;
+    padding: 118px 188px 56px 188px;
+    display: flex;
+    flex-direction: column;
+    gap: 118px;
+}
+
+.footer_info_part {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer_info_part div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_info_part a, .footer_info_part p {
+    font-family: 'gilroymedium';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #1e1e1e;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.footer_info_part h3 {
+    font-family: 'gilroybold';
+    font-size: 28px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #1e1e1e;
+}
+
+.footer_info_part h4 {
+    font-family: 'dm sans';
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: -0.01em;
+    color: #f6973f;
+}
+
+.footer_info_part div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+
+.footer_info_part div:nth-of-type(2),
+.footer_info_part div:nth-of-type(3),
+.footer_info_part div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer_info_part div:nth-of-type(2) h4,
+.footer_info_part div:nth-of-type(3) h4,
+.footer_info_part div:last-of-type h4 {
+    margin-bottom: 4px;
+}
+
+.footer_copyright {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_copyright p {
+    font-family: 'dm sans';
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: -0.01em;
+    color: #1e2833;
+    opacity: 0.5;
+}
+
+.footer_copyright a {
+    font-family: 'gilroymedium';
+    font-size: 15px;
+    line-height: 160%;
+    color: #1e1e1e;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.footer_copyright div {
+    display: flex;
+    gap: 40px;
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: auto;
+}
+
+.owl-item {
+    width: auto !important;
+    margin-right: 0 !important;
+}
+
+/*.owl-stage {*/
+/*    width: auto !important;*/
+/*}*/
+
+.owl-carousel.owl-loaded {
+    display: flex !important;
 }
