@@ -62,27 +62,27 @@ img[src="images/akar-icons_search.svg"] {
 }
 
 img[src="images/five_stars.png"] {
-  width: 103px;
+  width: 103px !important;
   height: 18px;
 }
 
 img[src="images/sakarias_armchair.png"] {
-  width: 219px;
+  width: 219px !important;
   height: 279px;
 }
 
 img[src="images/baltsar_chair.png"] {
-  width: 219px;
+  width: 219px !important;
   height: 274px;
 }
 
 img[src="images/anjay_chair.png"] {
-  width: 224px;
+  width: 224px !important;
   height: 278px;
 }
 
 img[src="images/nyantuy_chair.png"] {
-  width: 241px;
+  width: 241px !important;
   height: 290px;
 }
 
@@ -398,6 +398,7 @@ h1 {
 }
 
 .best_sell_prod_articles {
+  max-width: 1200px;
   display: flex;
   gap: 42px;
 }
@@ -797,19 +798,18 @@ h1 {
   gap: 40px;
 }
 
-#owl-two .owl-item img {
+#owl-one .owl-item img {
   display: block;
   width: auto;
 }
-#owl-two .owl-prev, #owl-two .owl-next {
-  border-radius: 26px;
-  padding: 11px;
-  width: 50px;
-  height: 50px;
-  box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.06);
-  background: #fff !important;
-  font-size: 0;
-  position: absolute;
+#owl-one .owl-stage-outer {
+  overflow-x: hidden !important;
+  overflow-y: visible !important;
+}
+
+#owl-two .owl-item img {
+  display: block;
+  width: auto;
 }
 #owl-two .owl-prev {
   top: 25%;
@@ -826,6 +826,17 @@ h1 {
 #owl-two .owl-next span {
   content: url("../images/arrow_right_black.svg");
   font-size: 0;
+}
+
+#owl-one .owl-prev, #owl-one .owl-next, #owl-two .owl-prev, #owl-two .owl-next {
+  border-radius: 26px;
+  padding: 11px;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.06);
+  background: #fff !important;
+  font-size: 0;
+  position: absolute;
 }
 
 /*# sourceMappingURL=style.css.map */

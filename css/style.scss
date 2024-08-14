@@ -6,27 +6,27 @@ img[src="images/akar-icons_search.svg"] {
 }
 
 img[src="images/five_stars.png"] {
-  width: 103px;
+  width: 103px !important;
   height: 18px;
 }
 
 img[src="images/sakarias_armchair.png"] {
-  width: 219px;
+  width: 219px !important;
   height: 279px;
 }
 
 img[src="images/baltsar_chair.png"] {
-  width: 219px;
+  width: 219px !important;
   height: 274px;
 }
 
 img[src="images/anjay_chair.png"] {
-  width: 224px;
+  width: 224px !important;
   height: 278px;
 }
 
 img[src="images/nyantuy_chair.png"] {
-  width: 241px;
+  width: 241px !important;
   height: 290px;
 }
 
@@ -371,6 +371,7 @@ h1 {
 }
 
 .best_sell_prod_articles {
+  max-width: 1200px;
   display: flex;
   gap: 42px;
 }
@@ -813,21 +814,23 @@ h1 {
 }
 
 
-#owl-two {
+#owl-one {
+
   .owl-item img {
     display: block;
     width: auto;
   }
 
-  .owl-prev, .owl-next {
-    border-radius: 26px;
-    padding: 11px;
-    width: 50px;
-    height: 50px;
-    box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.06);
-    background: #fff !important;
-    font-size: 0;
-    position: absolute;
+  .owl-stage-outer {
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+  }
+}
+
+#owl-two {
+  .owl-item img {
+    display: block;
+    width: auto;
   }
 
   .owl-prev {
@@ -849,7 +852,17 @@ h1 {
       font-size: 0;
     }
   }
-
-
 }
 
+#owl-one, #owl-two {
+  .owl-prev, .owl-next {
+    border-radius: 26px;
+    padding: 11px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.06);
+    background: #fff !important;
+    font-size: 0;
+    position: absolute;
+  }
+}
