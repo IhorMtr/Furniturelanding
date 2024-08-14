@@ -376,13 +376,6 @@ h1 {
   gap: 42px;
 }
 
-.prod_article_img {
-  border-radius: 20px 20px 0 0;
-  width: 268px;
-  height: 239px;
-  background: #fafafa;
-}
-
 .prod_article_info {
   border-radius: 0 0 20px 20px;
   width: 268px;
@@ -453,7 +446,10 @@ h1 {
 
 .prod_article_img {
   position: relative;
-  height: 268px;
+  border-radius: 20px 20px 0 0;
+  width: 268px;
+  height: 239px;
+  background: #fafafa;
 
   img {
     position: absolute;
