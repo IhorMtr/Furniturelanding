@@ -1,116 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-@font-face {
-  font-family: 'gilroysemibold';
-  src: url('../fonts/gilroy-semibold-webfont.eot');
-  src: url('../fonts/gilroy-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/gilroy-semibold-webfont.woff2') format('woff2'),
-  url('../fonts/gilroy-semibold-webfont.woff') format('woff'),
-  url('../fonts/gilroy-semibold-webfont.ttf') format('truetype'),
-  url('../fonts/gilroy-semibold-webfont.svg#gilroysemibold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-@font-face {
-  font-family: 'gilroythin';
-  src: url('../fonts/gilroy-thin-webfont.eot');
-  src: url('../fonts/gilroy-thin-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/gilroy-thin-webfont.woff2') format('woff2'),
-  url('../fonts/gilroy-thin-webfont.woff') format('woff'),
-  url('../fonts/gilroy-thin-webfont.ttf') format('truetype'),
-  url('../fonts/gilroy-thin-webfont.svg#gilroythin') format('svg');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-@font-face {
-  font-family: 'gilroyultralight';
-  src: url('../fonts/gilroy-ultralight-webfont.eot');
-  src: url('../fonts/gilroy-ultralight-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/gilroy-ultralight-webfont.woff2') format('woff2'),
-  url('../fonts/gilroy-ultralight-webfont.woff') format('woff'),
-  url('../fonts/gilroy-ultralight-webfont.ttf') format('truetype'),
-  url('../fonts/gilroy-ultralight-webfont.svg#gilroyultralight') format('svg');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-@font-face {
-  font-family: 'gilroyregular';
-  src: url('../fonts/gilroy-regular-webfont.eot');
-  src: url('../fonts/gilroy-regular-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/gilroy-regular-webfont.woff2') format('woff2'),
-  url('../fonts/gilroy-regular-webfont.woff') format('woff'),
-  url('../fonts/gilroy-regular-webfont.ttf') format('truetype'),
-  url('../fonts/gilroy-regular-webfont.svg#gilroyregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-@font-face {
-  font-family: 'gilroymedium';
-  src: url('../fonts/gilroy-medium-webfont.eot');
-  src: url('../fonts/gilroy-medium-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/gilroy-medium-webfont.woff2') format('woff2'),
-  url('../fonts/gilroy-medium-webfont.woff') format('woff'),
-  url('../fonts/gilroy-medium-webfont.ttf') format('truetype'),
-  url('../fonts/gilroy-medium-webfont.svg#gilroymedium') format('svg');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-@font-face {
-  font-family: 'gilroyheavy';
-  src: url('../fonts/gilroy-heavy-webfont.eot');
-  src: url('../fonts/gilroy-heavy-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/gilroy-heavy-webfont.woff2') format('woff2'),
-  url('../fonts/gilroy-heavy-webfont.woff') format('woff'),
-  url('../fonts/gilroy-heavy-webfont.ttf') format('truetype'),
-  url('../fonts/gilroy-heavy-webfont.svg#gilroyheavy') format('svg');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-@font-face {
-  font-family: 'gilroyblack';
-  src: url('../fonts/gilroy-black-webfont.eot');
-  src: url('../fonts/gilroy-black-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/gilroy-black-webfont.woff2') format('woff2'),
-  url('../fonts/gilroy-black-webfont.woff') format('woff'),
-  url('../fonts/gilroy-black-webfont.ttf') format('truetype'),
-  url('../fonts/gilroy-black-webfont.svg#gilroyblack') format('svg');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-@font-face {
-  font-family: 'gilroybold';
-  src: url('../fonts/gilroy-bold-webfont.eot');
-  src: url('../fonts/gilroy-bold-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/gilroy-bold-webfont.woff2') format('woff2'),
-  url('../fonts/gilroy-bold-webfont.woff') format('woff'),
-  url('../fonts/gilroy-bold-webfont.ttf') format('truetype'),
-  url('../fonts/gilroy-bold-webfont.svg#gilroybold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-
-}
+@use "var";
 
 img[src="images/akar-icons_search.svg"] {
   width: 18px;
@@ -221,7 +109,7 @@ nav {
 
 .header_brand_name {
   a {
-    font-family: 'gilroybold';
+    font-family: var.$main-font_bold;
     font-size: 28px;
     letter-spacing: 0.01em;
     text-transform: capitalize;
@@ -231,7 +119,7 @@ nav {
 
 nav {
   a {
-    font-family: 'gilroymedium';
+    font-family: var.$main-font_medium;
     font-size: 18px;
     color: #fff;
   }
@@ -299,7 +187,7 @@ nav {
 }
 
 h1 {
-  font-family: 'gilroybold';
+  font-family: var.$main-font_bold;
   font-size: 80px;
   line-height: 130%;
   letter-spacing: -0.01em;
@@ -310,7 +198,7 @@ h1 {
 
 .welcome_section {
   h3 {
-    font-family: 'gilroyregular';
+    font-family: var.$main-font_regular;
     font-weight: 400;
     font-size: 24px;
     line-height: 160%;
@@ -350,7 +238,7 @@ h1 {
 .welcome_search_form {
   input {
     &::placeholder {
-      font-family: 'gilroyregular';
+      font-family: var.$main-font_regular;
       font-size: 18px;
       line-height: 150%;
       color: #fff;
@@ -381,14 +269,14 @@ h1 {
   gap: 130px;
 
   h2 {
-    font-family: 'gilroybold';
+    font-family: var.$main-font_bold;
     font-size: 42px;
     color: #1e1e1e;
     width: 262px;
   }
 
   h3 {
-    font-family: 'gilroybold';
+    font-family: var.$main-font_bold;
     opacity: 0.9;
     font-size: 24px;
     color: #1e1e1e;
@@ -396,7 +284,7 @@ h1 {
   }
 
   p {
-    font-family: 'gilroyregular';
+    font-family: var.$main-font_regular;
     font-size: 16px;
     line-height: 185%;
     color: #1e1e1e;
@@ -404,7 +292,7 @@ h1 {
   }
 
   a {
-    font-family: 'gilroymedium';
+    font-family: var.$main-font_medium;
     font-size: 14px;
     line-height: 185%;
     color: #e58411;
@@ -440,7 +328,7 @@ h1 {
   background: #f7f7f7;
 
   h2 {
-    font-family: 'gilroybold';
+    font-family: var.$main-font_bold;
     font-size: 42px;
     color: #1e1e1e;
     margin-bottom: 32px;
@@ -473,7 +361,7 @@ h1 {
   }
 
   a {
-    font-family: 'gilroyregular';
+    font-family: var.$main-font_regular;
     font-size: 18px;
     line-height: 185%;
     color: #1e1e1e;
@@ -510,14 +398,14 @@ h1 {
     gap: 6px;
 
     p {
-      font-family: 'Inter', sans-serif;
+      font-family: var.$second-font_family;
       font-weight: 400;
       font-size: 16px;
       color: #8d8d8d;
     }
 
     h4 {
-      font-family: 'inter';
+      font-family: var.$second-font_family;
       font-weight: 600;
       font-size: 21px;
       text-transform: capitalize;
@@ -531,7 +419,7 @@ h1 {
     justify-content: space-between;
 
     p {
-      font-family: 'inter';
+      font-family: var.$second-font_family;
       font-weight: 600;
       font-size: 21px;
       color: #0d1b39;
@@ -541,7 +429,7 @@ h1 {
       &:before {
         content: "$";
         position: absolute;
-        font-family: 'inter';
+        font-family: var.$second-font_family;
         font-weight: 600;
         font-size: 15px;
         color: #0d1b39;
@@ -580,7 +468,7 @@ h1 {
 
 .best_sell_prod_view_all {
   margin-top: 60px;
-  font-family: 'gilroymedium';
+  font-family: var.$main-font_medium;
   font-size: 18px;
   line-height: 185%;
   color: #e58411;
@@ -615,7 +503,7 @@ h1 {
     gap: 20px;
 
     p:first-of-type {
-      font-family: 'gilroysemibold';
+      font-family: var.$main-font_semibold;
       font-size: 18px;
       letter-spacing: 0.17em;
       text-transform: uppercase;
@@ -623,7 +511,7 @@ h1 {
     }
 
     p:nth-of-type(2) {
-      font-family: 'gilroyregular';
+      font-family: var.$main-font_regular;
       font-weight: 400;
       font-size: 18px;
       line-height: 185%;
@@ -632,7 +520,7 @@ h1 {
     }
 
     a {
-      font-family: 'gilroymedium';
+      font-family: var.$main-font_medium;
       font-weight: 400;
       font-size: 14px;
       line-height: 185%;
@@ -655,7 +543,7 @@ h1 {
   }
 
   h2 {
-    font-family: 'gilroybold';
+    font-family: var.$main-font_bold;
     font-size: 42px;
     text-transform: capitalize;
     color: #1e1e1e;
@@ -683,7 +571,7 @@ h1 {
 
   p {
     &:first-of-type {
-      font-family: 'gilroysemibold';
+      font-family: var.$main-font_bold;
       font-size: 18px;
       letter-spacing: 0.17em;
       text-transform: uppercase;
@@ -691,7 +579,7 @@ h1 {
     }
 
     &:last-of-type {
-      font-family: 'gilroyregular';
+      font-family: var.$main-font_regular;
       font-size: 18px;
       line-height: 185%;
       color: #1e1e1e;
@@ -700,14 +588,14 @@ h1 {
   }
 
   h2 {
-    font-family: 'gilroybold';
+    font-family: var.$main-font_bold;
     font-size: 42px;
     text-transform: capitalize;
     color: #1e1e1e;
   }
 
   a {
-    font-family: 'gilroymedium';
+    font-family: var.$main-font_medium;
     font-size: 14px;
     line-height: 185%;
     color: #e58411;
@@ -739,8 +627,13 @@ h1 {
   flex-direction: column;
 }
 
+.reviews {
+  margin-bottom: 214px;
+}
+
 .reviews_container {
-  padding: 0 80px 214px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .reviews_title {
@@ -751,7 +644,7 @@ h1 {
   margin-bottom: 60px;
 
   p {
-    font-family: 'gilroysemibold';
+    font-family: var.$main-font_semibold;
     font-size: 18px;
     letter-spacing: 0.17em;
     text-transform: uppercase;
@@ -760,7 +653,7 @@ h1 {
   }
 
   h2 {
-    font-family: 'gilroysemibold';
+    font-family: var.$main-font_bold;
     font-size: 42px;
     text-transform: capitalize;
     text-align: center;
@@ -794,7 +687,7 @@ h1 {
 
   p {
     &:first-of-type {
-      font-family: 'gilroybold';
+      font-family: var.$main-font_bold;
       font-size: 18px;
       text-transform: capitalize;
       text-align: center;
@@ -804,7 +697,7 @@ h1 {
     }
 
     &:nth-of-type(2) {
-      font-family: 'gilroyregular';
+      font-family: var.$main-font_regular;
       font-size: 12px;
       text-align: center;
       color: #1e1e1e;
@@ -813,7 +706,7 @@ h1 {
     }
 
     &:last-of-type {
-      font-family: 'gilroyregular';
+      font-family: var.$main-font_regular;
       font-size: 14px;
       text-align: center;
       color: #1e1e1e;
@@ -864,7 +757,7 @@ h1 {
   }
 
   a, p {
-    font-family: 'gilroymedium';
+    font-family: var.$main-font_medium;
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
@@ -874,7 +767,7 @@ h1 {
   }
 
   h3 {
-    font-family: 'gilroybold';
+    font-family: var.$main-font_bold;
     font-size: 28px;
     letter-spacing: 0.01em;
     text-transform: capitalize;
@@ -882,7 +775,7 @@ h1 {
   }
 
   h4 {
-    font-family: 'dm sans';
+    font-family: var.$third-font_family;
     font-weight: 400;
     font-size: 17px;
     letter-spacing: -0.01em;
@@ -896,7 +789,7 @@ h1 {
   justify-content: space-between;
 
   p {
-    font-family: 'dm sans';
+    font-family: var.$third-font_family;
     font-weight: 400;
     font-size: 15px;
     letter-spacing: -0.01em;
@@ -905,7 +798,7 @@ h1 {
   }
 
   a {
-    font-family: 'gilroymedium';
+    font-family: var.$main-font_medium;
     font-size: 15px;
     line-height: 160%;
     color: #1e1e1e;
@@ -920,20 +813,43 @@ h1 {
 }
 
 
-.owl-carousel .owl-item img {
-  display: block;
-  width: auto;
+#owl-two {
+  .owl-item img {
+    display: block;
+    width: auto;
+  }
+
+  .owl-prev, .owl-next {
+    border-radius: 26px;
+    padding: 11px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.06);
+    background: #fff !important;
+    font-size: 0;
+    position: absolute;
+  }
+
+  .owl-prev {
+    top: 25%;
+    left: -9px;
+
+    span {
+      content: url('../images/arrow_left_black.svg');
+      font-size: 0;
+    }
+  }
+
+  .owl-next {
+    top: 25%;
+    left: 97%;
+
+    span {
+      content: url('../images/arrow_right_black.svg');
+      font-size: 0;
+    }
+  }
+
+
 }
 
-.owl-item {
-  width: auto !important;
-  margin-right: 0 !important;
-}
-
-/*.owl-stage {*/
-/*    width: auto !important;*/
-/*}*/
-
-.owl-carousel.owl-loaded {
-  display: flex !important;
-}

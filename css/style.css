@@ -164,7 +164,7 @@ nav {
 }
 
 .header_brand_name a {
-  font-family: "gilroybold";
+  font-family: gilroybold;
   font-size: 28px;
   letter-spacing: 0.01em;
   text-transform: capitalize;
@@ -172,7 +172,7 @@ nav {
 }
 
 nav a {
-  font-family: "gilroymedium";
+  font-family: gilroymedium;
   font-size: 18px;
   color: #fff;
 }
@@ -233,7 +233,7 @@ nav a {
 }
 
 h1 {
-  font-family: "gilroybold";
+  font-family: gilroybold;
   font-size: 80px;
   line-height: 130%;
   letter-spacing: -0.01em;
@@ -243,7 +243,7 @@ h1 {
 }
 
 .welcome_section h3 {
-  font-family: "gilroyregular";
+  font-family: gilroyregular;
   font-weight: 400;
   font-size: 24px;
   line-height: 160%;
@@ -278,7 +278,7 @@ h1 {
 }
 
 .welcome_search_form input::placeholder {
-  font-family: "gilroyregular";
+  font-family: gilroyregular;
   font-size: 18px;
   line-height: 150%;
   color: #fff;
@@ -305,27 +305,27 @@ h1 {
   gap: 130px;
 }
 .why_choose_us_container h2 {
-  font-family: "gilroybold";
+  font-family: gilroybold;
   font-size: 42px;
   color: #1e1e1e;
   width: 262px;
 }
 .why_choose_us_container h3 {
-  font-family: "gilroybold";
+  font-family: gilroybold;
   opacity: 0.9;
   font-size: 24px;
   color: #1e1e1e;
   margin-bottom: 20px;
 }
 .why_choose_us_container p {
-  font-family: "gilroyregular";
+  font-family: gilroyregular;
   font-size: 16px;
   line-height: 185%;
   color: #1e1e1e;
   opacity: 0.8;
 }
 .why_choose_us_container a {
-  font-family: "gilroymedium";
+  font-family: gilroymedium;
   font-size: 14px;
   line-height: 185%;
   color: #e58411;
@@ -359,7 +359,7 @@ h1 {
   background: #f7f7f7;
 }
 .best_sell_prod_container h2 {
-  font-family: "gilroybold";
+  font-family: gilroybold;
   font-size: 42px;
   color: #1e1e1e;
   margin-bottom: 32px;
@@ -389,7 +389,7 @@ h1 {
   background: #fff;
 }
 .product_selector a {
-  font-family: "gilroyregular";
+  font-family: gilroyregular;
   font-size: 18px;
   line-height: 185%;
   color: #1e1e1e;
@@ -425,13 +425,13 @@ h1 {
   gap: 6px;
 }
 .prod_article_info div:first-of-type p {
-  font-family: "Inter", sans-serif;
+  font-family: inter;
   font-weight: 400;
   font-size: 16px;
   color: #8d8d8d;
 }
 .prod_article_info div:first-of-type h4 {
-  font-family: "inter";
+  font-family: inter;
   font-weight: 600;
   font-size: 21px;
   text-transform: capitalize;
@@ -443,7 +443,7 @@ h1 {
   justify-content: space-between;
 }
 .prod_article_info div:last-of-type p {
-  font-family: "inter";
+  font-family: inter;
   font-weight: 600;
   font-size: 21px;
   color: #0d1b39;
@@ -453,7 +453,7 @@ h1 {
 .prod_article_info div:last-of-type p:before {
   content: "$";
   position: absolute;
-  font-family: "inter";
+  font-family: inter;
   font-weight: 600;
   font-size: 15px;
   color: #0d1b39;
@@ -485,7 +485,7 @@ h1 {
 
 .best_sell_prod_view_all {
   margin-top: 60px;
-  font-family: "gilroymedium";
+  font-family: gilroymedium;
   font-size: 18px;
   line-height: 185%;
   color: #e58411;
@@ -519,14 +519,14 @@ h1 {
   gap: 20px;
 }
 .experiences_container div:last-of-type p:first-of-type {
-  font-family: "gilroysemibold";
+  font-family: gilroysemibold;
   font-size: 18px;
   letter-spacing: 0.17em;
   text-transform: uppercase;
   color: #e58411;
 }
 .experiences_container div:last-of-type p:nth-of-type(2) {
-  font-family: "gilroyregular";
+  font-family: gilroyregular;
   font-weight: 400;
   font-size: 18px;
   line-height: 185%;
@@ -534,7 +534,7 @@ h1 {
   opacity: 0.8;
 }
 .experiences_container div:last-of-type a {
-  font-family: "gilroymedium";
+  font-family: gilroymedium;
   font-weight: 400;
   font-size: 14px;
   line-height: 185%;
@@ -554,7 +554,7 @@ h1 {
   margin-left: 13px;
 }
 .experiences_container h2 {
-  font-family: "gilroybold";
+  font-family: gilroybold;
   font-size: 42px;
   text-transform: capitalize;
   color: #1e1e1e;
@@ -580,27 +580,27 @@ h1 {
   justify-content: center;
 }
 .materials_info_part p:first-of-type {
-  font-family: "gilroysemibold";
+  font-family: gilroybold;
   font-size: 18px;
   letter-spacing: 0.17em;
   text-transform: uppercase;
   color: #e58411;
 }
 .materials_info_part p:last-of-type {
-  font-family: "gilroyregular";
+  font-family: gilroyregular;
   font-size: 18px;
   line-height: 185%;
   color: #1e1e1e;
   opacity: 0.8;
 }
 .materials_info_part h2 {
-  font-family: "gilroybold";
+  font-family: gilroybold;
   font-size: 42px;
   text-transform: capitalize;
   color: #1e1e1e;
 }
 .materials_info_part a {
-  font-family: "gilroymedium";
+  font-family: gilroymedium;
   font-size: 14px;
   line-height: 185%;
   color: #e58411;
@@ -630,8 +630,13 @@ h1 {
   flex-direction: column;
 }
 
+.reviews {
+  margin-bottom: 214px;
+}
+
 .reviews_container {
-  padding: 0 80px 214px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .reviews_title {
@@ -642,7 +647,7 @@ h1 {
   margin-bottom: 60px;
 }
 .reviews_title p {
-  font-family: "gilroysemibold";
+  font-family: gilroysemibold;
   font-size: 18px;
   letter-spacing: 0.17em;
   text-transform: uppercase;
@@ -650,7 +655,7 @@ h1 {
   color: #e58411;
 }
 .reviews_title h2 {
-  font-family: "gilroysemibold";
+  font-family: gilroybold;
   font-size: 42px;
   text-transform: capitalize;
   text-align: center;
@@ -681,7 +686,7 @@ h1 {
   text-align: center;
 }
 .reviews_text p:first-of-type {
-  font-family: "gilroybold";
+  font-family: gilroybold;
   font-size: 18px;
   text-transform: capitalize;
   text-align: center;
@@ -690,7 +695,7 @@ h1 {
   margin-bottom: 6px;
 }
 .reviews_text p:nth-of-type(2) {
-  font-family: "gilroyregular";
+  font-family: gilroyregular;
   font-size: 12px;
   text-align: center;
   color: #1e1e1e;
@@ -698,7 +703,7 @@ h1 {
   margin-bottom: 22px;
 }
 .reviews_text p:last-of-type {
-  font-family: "gilroyregular";
+  font-family: gilroyregular;
   font-size: 14px;
   text-align: center;
   color: #1e1e1e;
@@ -743,7 +748,7 @@ h1 {
   gap: 16px;
 }
 .footer_info_part a, .footer_info_part p {
-  font-family: "gilroymedium";
+  font-family: gilroymedium;
   font-weight: 400;
   font-size: 15px;
   line-height: 160%;
@@ -752,14 +757,14 @@ h1 {
   text-decoration: none;
 }
 .footer_info_part h3 {
-  font-family: "gilroybold";
+  font-family: gilroybold;
   font-size: 28px;
   letter-spacing: 0.01em;
   text-transform: capitalize;
   color: #1e1e1e;
 }
 .footer_info_part h4 {
-  font-family: "dm sans";
+  font-family: Dm sans;
   font-weight: 400;
   font-size: 17px;
   letter-spacing: -0.01em;
@@ -772,7 +777,7 @@ h1 {
   justify-content: space-between;
 }
 .footer_copyright p {
-  font-family: "dm sans";
+  font-family: Dm sans;
   font-weight: 400;
   font-size: 15px;
   letter-spacing: -0.01em;
@@ -780,7 +785,7 @@ h1 {
   opacity: 0.5;
 }
 .footer_copyright a {
-  font-family: "gilroymedium";
+  font-family: gilroymedium;
   font-size: 15px;
   line-height: 160%;
   color: #1e1e1e;
@@ -792,21 +797,35 @@ h1 {
   gap: 40px;
 }
 
-.owl-carousel .owl-item img {
+#owl-two .owl-item img {
   display: block;
   width: auto;
 }
-
-.owl-item {
-  width: auto !important;
-  margin-right: 0 !important;
+#owl-two .owl-prev, #owl-two .owl-next {
+  border-radius: 26px;
+  padding: 11px;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.06);
+  background: #fff !important;
+  font-size: 0;
+  position: absolute;
 }
-
-/*.owl-stage {*/
-/*    width: auto !important;*/
-/*}*/
-.owl-carousel.owl-loaded {
-  display: flex !important;
+#owl-two .owl-prev {
+  top: 25%;
+  left: -9px;
+}
+#owl-two .owl-prev span {
+  content: url("../images/arrow_left_black.svg");
+  font-size: 0;
+}
+#owl-two .owl-next {
+  top: 25%;
+  left: 97%;
+}
+#owl-two .owl-next span {
+  content: url("../images/arrow_right_black.svg");
+  font-size: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

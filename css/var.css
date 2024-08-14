@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@font-face {
+  font-family: "gilroysemibold";
+  src: url("../fonts/gilroy-semibold-webfont.eot");
+  src: url("../fonts/gilroy-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy-semibold-webfont.woff2") format("woff2"), url("../fonts/gilroy-semibold-webfont.woff") format("woff"), url("../fonts/gilroy-semibold-webfont.ttf") format("truetype"), url("../fonts/gilroy-semibold-webfont.svg#gilroysemibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "gilroythin";
+  src: url("../fonts/gilroy-thin-webfont.eot");
+  src: url("../fonts/gilroy-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy-thin-webfont.woff2") format("woff2"), url("../fonts/gilroy-thin-webfont.woff") format("woff"), url("../fonts/gilroy-thin-webfont.ttf") format("truetype"), url("../fonts/gilroy-thin-webfont.svg#gilroythin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "gilroyultralight";
+  src: url("../fonts/gilroy-ultralight-webfont.eot");
+  src: url("../fonts/gilroy-ultralight-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy-ultralight-webfont.woff2") format("woff2"), url("../fonts/gilroy-ultralight-webfont.woff") format("woff"), url("../fonts/gilroy-ultralight-webfont.ttf") format("truetype"), url("../fonts/gilroy-ultralight-webfont.svg#gilroyultralight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "gilroyregular";
+  src: url("../fonts/gilroy-regular-webfont.eot");
+  src: url("../fonts/gilroy-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy-regular-webfont.woff2") format("woff2"), url("../fonts/gilroy-regular-webfont.woff") format("woff"), url("../fonts/gilroy-regular-webfont.ttf") format("truetype"), url("../fonts/gilroy-regular-webfont.svg#gilroyregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "gilroymedium";
+  src: url("../fonts/gilroy-medium-webfont.eot");
+  src: url("../fonts/gilroy-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy-medium-webfont.woff2") format("woff2"), url("../fonts/gilroy-medium-webfont.woff") format("woff"), url("../fonts/gilroy-medium-webfont.ttf") format("truetype"), url("../fonts/gilroy-medium-webfont.svg#gilroymedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "gilroyheavy";
+  src: url("../fonts/gilroy-heavy-webfont.eot");
+  src: url("../fonts/gilroy-heavy-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy-heavy-webfont.woff2") format("woff2"), url("../fonts/gilroy-heavy-webfont.woff") format("woff"), url("../fonts/gilroy-heavy-webfont.ttf") format("truetype"), url("../fonts/gilroy-heavy-webfont.svg#gilroyheavy") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "gilroyblack";
+  src: url("../fonts/gilroy-black-webfont.eot");
+  src: url("../fonts/gilroy-black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy-black-webfont.woff2") format("woff2"), url("../fonts/gilroy-black-webfont.woff") format("woff"), url("../fonts/gilroy-black-webfont.ttf") format("truetype"), url("../fonts/gilroy-black-webfont.svg#gilroyblack") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "gilroybold";
+  src: url("../fonts/gilroy-bold-webfont.eot");
+  src: url("../fonts/gilroy-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy-bold-webfont.woff2") format("woff2"), url("../fonts/gilroy-bold-webfont.woff") format("woff"), url("../fonts/gilroy-bold-webfont.ttf") format("truetype"), url("../fonts/gilroy-bold-webfont.svg#gilroybold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=var.css.map */
