@@ -1,5 +1,7 @@
+@use "var";
+
 @media screen and (max-width: 1025px) {
-  header{
+  header {
     height: 1000px;
   }
   .header_container,
@@ -27,7 +29,7 @@
       align-items: center;
     }
   }
-  .materials {
+  .materials_container {
     padding-left: 40px;
   }
 
@@ -86,5 +88,194 @@
   }
   .header_container ul {
     gap: 55px;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  header {
+    height: 500px;
+  }
+  .header_container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-but-wrap {
+    padding-left: 0;
+    padding-top: 19px;
+  }
+  .header_brand_name {
+    display: none;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .welcome_section h3 {
+    font-size: 16px;
+  }
+  .welcome_search_form {
+    width: 240px;
+    height: 40px;
+  }
+  .welcome_search_form input {
+    width: 160px;
+
+    &::placeholder {
+      font-size: 15px;
+    }
+  }
+  .welcome_search_form button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .why_choose_us_container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+
+    h2 {
+      font-size: 25px;
+    }
+  }
+  .why_choose_us_container_articles {
+    flex-direction: column;
+
+    article {
+      h3 {
+        font-size: 20px;
+      }
+
+      a {
+        display: inline-flex;
+      }
+    }
+  }
+  .best_sell_prod_container h2 {
+    font-size: 25px;
+  }
+  .product_selector {
+    width: 300px;
+  }
+  .experiences_container {
+    h2 {
+      font-size: 25px;
+    }
+
+    p {
+      &:first-of-type {
+        font-size: 16px;
+      }
+
+      &:nth-of-type(2) {
+        font-size: 16px;
+      }
+    }
+
+    padding: 120px 0;
+    flex-direction: column;
+
+
+    .experiences_main_photo {
+      order: 2;
+      padding-right: 40px;
+
+      img[src="images/experiences_main_photo.png"] {
+        width: 390px;
+        height: 332px;
+      }
+    }
+
+    .experiences_text {
+      order: 1;
+      text-align: center;
+      padding: 0 15px;
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  .materials_container {
+    flex-direction: column;
+    padding-left: 0;
+
+    h2 {
+      font-size: 25px;
+    }
+
+    .materials_info_part {
+      text-align: center;
+
+      p {
+        &:first-of-type {
+          font-size: 16px;
+
+          &:last-of-type {
+            font-size: 16px;
+          }
+        }
+      }
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .materials_photos {
+
+      img[src="images/group_48095439.png"] {
+        width: 260px;
+        height: 374px;
+      }
+    }
+  }
+  .footer_info_part {
+    h3 {
+      font-size: 20px;
+    }
+
+    text-align: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .footer_copyright {
+    p {
+      align-self: center;
+    }
+  }
+  .nav__list {
+    flex-direction: column;
+  }
+  .header_drop_down:after {
+    display: none;
+  }
+  .nav__list-item a {
+    font-family: var.$main-font_bold;
+    font-weight: 400;
+    font-size: 24px;
+    color: #1e1e1e;
+  }
+  .nav:after {
+    background: #fff;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  body.nav-active .menu-icon__line {
+    background-color: #1e1e1e;
+  }
+  .nav__list-item a:hover {
+    color: #7a7a7a;
+  }
+  .menu-icon__line {
+    background-color: #fff;
+  }
+  .menu-icon--active {
+    position: fixed;
   }
 }

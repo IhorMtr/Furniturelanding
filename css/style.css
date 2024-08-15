@@ -518,25 +518,19 @@ h1 {
   margin-left: 12px;
 }
 
-.experiences_container {
-  padding: 240px 80px 270px 0;
-  display: flex;
-  gap: 141px;
-  align-items: center;
-}
-.experiences_container div:last-of-type {
+.experiences_text {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.experiences_container div:last-of-type p:first-of-type {
+.experiences_text p:first-of-type {
   font-family: gilroysemibold;
   font-size: 18px;
   letter-spacing: 0.17em;
   text-transform: uppercase;
   color: #e58411;
 }
-.experiences_container div:last-of-type p:nth-of-type(2) {
+.experiences_text p:nth-of-type(2) {
   font-family: gilroyregular;
   font-weight: 400;
   font-size: 18px;
@@ -544,7 +538,7 @@ h1 {
   color: #1e1e1e;
   opacity: 0.8;
 }
-.experiences_container div:last-of-type a {
+.experiences_text a {
   font-family: gilroymedium;
   font-weight: 400;
   font-size: 14px;
@@ -555,7 +549,7 @@ h1 {
   text-decoration: none;
   margin-top: 4px;
 }
-.experiences_container div:last-of-type a:after {
+.experiences_text a:after {
   content: "";
   background-image: url("../images/grommet-icons_form-next-link.svg");
   background-repeat: no-repeat;
@@ -564,7 +558,15 @@ h1 {
   display: block;
   margin-left: 13px;
 }
-.experiences_container h2 {
+
+.experiences_container {
+  padding: 240px 80px 270px 0;
+  display: flex;
+  gap: 141px;
+  align-items: center;
+}
+
+h2 {
   font-family: gilroybold;
   font-size: 42px;
   text-transform: capitalize;
@@ -576,11 +578,11 @@ h1 {
 }
 
 .materials {
-  padding-left: 80px;
   margin-bottom: 240px;
 }
 
 .materials_container {
+  padding-left: 80px;
   display: flex;
   justify-content: flex-end;
 }

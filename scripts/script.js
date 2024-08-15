@@ -9,6 +9,7 @@ $('#owl-one').owlCarousel({
     nav: true,
     responsive: {
         0: {
+            nav: false,
             items: 1
         },
         768: {
@@ -34,6 +35,7 @@ $('#owl-two').owlCarousel({
     rewind: true,
     responsive: {
         0: {
+            nav: false,
             items: 1
         },
         768: {
@@ -74,7 +76,6 @@ $('#owl-two').owlCarousel({
     }();
 
 
-    //Switch light/dark
 
     $("#switch").on('click', function () {
         if ($("body").hasClass("light")) {
@@ -87,3 +88,7 @@ $('#owl-two').owlCarousel({
     });
 
 })(jQuery);
+
+document.querySelector('.menu-icon').addEventListener('click', function () {
+    this.classList.toggle('menu-icon--active');
+});
