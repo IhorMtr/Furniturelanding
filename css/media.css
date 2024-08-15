@@ -1,0 +1,73 @@
+@media screen and (max-width: 1025px) {
+  .header_container,
+  .welcome_section_container,
+  .why_choose_us_container,
+  .best_sell_prod_container,
+  .reviews_container,
+  .footer_container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .best_sell_prod_articles article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .reviews_articles .owl-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .materials {
+    padding-left: 40px;
+  }
+  .experiences_container {
+    gap: 70px;
+    padding-right: 40px;
+  }
+  .footer_info_part div:first-of-type {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 835px) {
+  h1 {
+    font-size: 60px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  .materials_container {
+    gap: 20px;
+  }
+  img[src="images/experiences_main_photo.png"] {
+    width: 497px;
+    height: 443px;
+  }
+  img[src="images/group_48095439.png"] {
+    width: 278px;
+    height: 380px;
+  }
+  img[src="images/group_48095417.png"] {
+    width: 167px;
+    height: 188px;
+  }
+  img[src="images/group_48095419.png"] {
+    width: 167px;
+    height: 236px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .why_choose_us_container {
+    gap: 90px;
+  }
+  .experiences_container {
+    gap: 10px;
+  }
+  .header_container ul {
+    gap: 55px;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */

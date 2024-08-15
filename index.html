@@ -12,24 +12,41 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
 
-    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/mob_menu.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 
 </head>
 <body>
-<header>
+<header class="cd-header">
     <section>
-        <div class="header_container">
+        <div class="header_container header_wrapper">
             <p class="header_brand_name"><a href="#">Panto</a></p>
-            <nav>
-                <ul>
-                    <li><a href="#" class="header_drop_down">Furniture</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+            <nav class="nav">
+                <div class="nav__content">
+                    <ul class="nav__list">
+                        <li class="nav__list-item active-nav">
+                            <a href="#" class="header_drop_down hover-target">Furniture</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="#" class="hover-target">Shop</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="#" class="hover-target">About Us</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="#" class="hover-target">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
+            <div class="nav-but-wrap">
+                <div class="menu-icon hover-target">
+                    <span class="menu-icon__line menu-icon__line-left"></span>
+                    <span class="menu-icon__line"></span>
+                    <span class="menu-icon__line menu-icon__line-right"></span>
+                </div>
+            </div>
             <a href="#" class="header_shopping_cart"></a>
         </div>
     </section>
@@ -148,6 +165,22 @@
                         </div>
                     </div>
                 </article>
+                <article>
+                    <div class="prod_article_img">
+                        <img src="images/nyantuy_chair.png" alt="nyantuy_chair">
+                    </div>
+                    <div class="prod_article_info">
+                        <div>
+                            <p>Chair</p>
+                            <h4>Nyantuy Chair</h4>
+                            <img src="images/five_stars.png" alt="five_star_rating">
+                        </div>
+                        <div>
+                            <p>921</p>
+                            <a href="#"><img src="images/bx_bx-plus.svg" alt="plus_icon"></a>
+                        </div>
+                    </div>
+                </article>
             </div>
             <a href="#" class="best_sell_prod_view_all">View All</a>
         </div>
@@ -194,7 +227,7 @@
             <div class="reviews_articles owl-carousel" id="owl-two">
                 <article>
                     <img src="images/article_chair.png" alt="room_with_chair">
-                    <div class="reviews_text">
+                    <div class="reviews_text reviews_first">
                         <img src="images/bang_upin.png" alt="user_photo" class="reviews_user_photo">
                         <p>Bang Upin</p>
                         <p>Pedagang Asongan</p>
@@ -276,16 +309,16 @@
             </div>
             <div>
                 <h4>Follow Us</h4>
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Twitter</a>
+                <a href="#" target="_blank">Instagram</a>
             </div>
         </div>
         <div class="footer_copyright">
             <p>Copyright © 2021</p>
             <div>
-                <a href="#">Terms & Conditions</a>
-                <a href="#">Privacy Policy</a>
+                <a href="#" target="_blank">Terms & Conditions</a>
+                <a href="#" target="_blank">Privacy Policy</a>
             </div>
         </div>
     </div>
