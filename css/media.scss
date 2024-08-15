@@ -1,5 +1,5 @@
 @media screen and (max-width: 1025px) {
-  header {
+  header{
     height: 1000px;
   }
   .header_container,
@@ -11,29 +11,38 @@
     padding-left: 16px;
     padding-right: 16px;
   }
-  .best_sell_prod_articles article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .best_sell_prod_articles {
+    article {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
-  .reviews_articles .owl-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .reviews_articles {
+    .owl-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
   .materials {
     padding-left: 40px;
   }
+
   .experiences_container {
     gap: 70px;
     padding-right: 40px;
   }
-  .footer_info_part div:first-of-type {
-    width: 400px;
+
+  .footer_info_part {
+    div:first-of-type {
+      width: 400px;
+    }
   }
 }
+
 @media screen and (max-width: 835px) {
   header {
     height: 800px;
@@ -64,6 +73,7 @@
     height: 236px;
   }
 }
+
 @media screen and (max-width: 769px) {
   header {
     height: 800px;
@@ -78,5 +88,3 @@
     gap: 55px;
   }
 }
-
-/*# sourceMappingURL=media.css.map */
