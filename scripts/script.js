@@ -36,7 +36,21 @@ $('#owl-two').owlCarousel({
     responsive: {
         0: {
             nav: false,
-            items: 1
+            items: 1,
+        },
+        320: {
+            nav: false,
+            margin: 25,
+            items: 1,
+        },
+        360: {
+            nav: false,
+            margin: 5,
+            items: 1,
+        },
+        375: {
+            nav: false,
+            items: 1,
         },
         768: {
             nav: false,
@@ -76,7 +90,6 @@ $('#owl-two').owlCarousel({
     }();
 
 
-
     $("#switch").on('click', function () {
         if ($("body").hasClass("light")) {
             $("body").removeClass("light");
@@ -89,6 +102,26 @@ $('#owl-two').owlCarousel({
 
 })(jQuery);
 
-document.querySelector('.menu-icon').addEventListener('click', function () {
-    this.classList.toggle('menu-icon--active');
+document.addEventListener("DOMContentLoaded", function() {
+    const textElements = document.querySelectorAll('.hidden-text');
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.01
+    };
+
+    function handleIntersect(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible-text');
+                observer.unobserve(entry.target);
+            }
+        });
+    }
+
+    const observer = new IntersectionObserver(handleIntersect, options);
+
+    textElements.forEach(element => {
+        observer.observe(element);
+    });
 });
