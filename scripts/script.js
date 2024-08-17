@@ -102,7 +102,7 @@ $('#owl-two').owlCarousel({
 
 })(jQuery);
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const textElements = document.querySelectorAll('.hidden-text');
     const options = {
         root: null,
@@ -124,4 +124,7 @@ document.addEventListener("DOMContentLoaded", function() {
     textElements.forEach(element => {
         observer.observe(element);
     });
+});
+document.querySelector('.menu-icon').addEventListener('click', function () {
+    this.classList.toggle('menu-icon--active');
 });
