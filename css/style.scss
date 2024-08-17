@@ -113,10 +113,19 @@ nav {
   margin: 47px auto;
 }
 
-.header_container ul {
-  display: flex;
-  gap: 63px;
-  z-index: 10;
+.header_container {
+  ul {
+    display: flex;
+    gap: 63px;
+    z-index: 10;
+
+    li {
+      &:hover a {
+        color: #c0c0c0;
+        transition: 0.3s;
+      }
+    }
+  }
 }
 
 .header_brand_name {
@@ -171,6 +180,11 @@ nav {
     height: 18px;
     width: 18px;
     margin-left: 8px;
+  }
+
+  &:hover:after {
+    background-image: url("../images/eva_arrow-ios-back-outline_grey.svg");
+    transition: 0.3s;
   }
 }
 
@@ -273,6 +287,10 @@ h1 {
     height: 40px;
     background: var.$main-color_e58411;
     cursor: pointer;
+    &:hover{
+      background: #d46a0f;
+      transition: 0.3s;
+    }
   }
 }
 
@@ -316,6 +334,8 @@ h1 {
     align-items: center;
     text-decoration: none;
     margin-top: 13px;
+
+    @include var.hover-effect(#d46a0f, "../images/grommet-icons_form-next-link_darker.svg");
 
     &:after {
       content: "";
@@ -494,6 +514,8 @@ h1 {
   justify-content: center;
   align-items: center;
 
+  @include var.hover-effect(#d46a0f, "../images/grommet-icons_form-next-link_darker.svg");
+
   &:after {
     content: "";
     background-image: url("../images/grommet-icons_form-next-link.svg");
@@ -537,6 +559,7 @@ h1 {
     align-items: center;
     text-decoration: none;
     margin-top: 4px;
+    @include var.hover-effect(#d46a0f, "../images/grommet-icons_form-next-link_darker.svg");
 
     &:after {
       content: "";
@@ -615,6 +638,7 @@ h2 {
     align-items: center;
     margin-top: 4px;
     text-decoration: none;
+    @include var.hover-effect(#d46a0f, "../images/grommet-icons_form-next-link_darker.svg");
 
     &:after {
       content: "";
@@ -788,6 +812,10 @@ footer {
     text-decoration: none;
   }
 
+  a {
+    @include var.hover-effect_without_img(#4d4d4d);
+  }
+
   h3 {
     font-family: var.$main-font_bold;
     font-size: 28px;
@@ -826,6 +854,8 @@ footer {
     color: var.$main-color_1e1e1e;
     opacity: 0.8;
     text-decoration: none;
+
+    @include var.hover-effect_without_img(#4d4d4d);
   }
 
   div {
