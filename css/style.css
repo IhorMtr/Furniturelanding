@@ -155,7 +155,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: auto;
 }
 
 .header_container {
@@ -244,11 +243,11 @@ nav a {
 }
 
 .welcome_section_container {
+  display: flex;
+  align-items: center;
   max-width: 1200px;
   margin: auto;
-  display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 h1 {
@@ -278,6 +277,8 @@ h1 {
 
 .welcome_search_form {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: 0.86px solid rgba(255, 255, 255, 0.6);
   border-radius: 42px;
   padding: 8px 8px 8px 20px;
@@ -285,8 +286,6 @@ h1 {
   height: 56px;
   backdrop-filter: blur(8px);
   background: rgba(255, 255, 255, 0.15);
-  justify-content: space-between;
-  align-items: center;
   margin-top: 45px;
 }
 
@@ -324,6 +323,8 @@ h1 {
 }
 
 .why_choose_us_container {
+  display: flex;
+  align-items: center;
   max-width: 1200px;
   margin: auto;
   display: flex;
@@ -351,12 +352,12 @@ h1 {
   opacity: 0.8;
 }
 .why_choose_us_container a {
+  display: flex;
+  align-items: center;
   font-family: gilroymedium;
   font-size: 14px;
   line-height: 185%;
   color: #e58411;
-  display: flex;
-  align-items: center;
   text-decoration: none;
   margin-top: 13px;
 }
@@ -388,12 +389,12 @@ h1 {
 }
 
 .best_sell_prod_container {
+  display: flex;
+  align-items: center;
   max-width: 1200px;
   margin: auto;
-  display: flex;
   flex-direction: column;
   padding: 50px 0;
-  align-items: center;
 }
 .best_sell_prod_container h2 {
   font-family: gilroybold;
@@ -408,24 +409,24 @@ h1 {
 }
 
 .product_selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 44px;
   padding: 6px;
   width: 348px;
   height: 57px;
   background: #eee;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 80px;
 }
 .product_selector li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 32px;
   padding: 4px;
   width: 84px;
   height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .product_selector li:active {
   background: #fff;
@@ -469,8 +470,8 @@ h1 {
 }
 .prod_article_info div:last-of-type {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 .prod_article_info div:last-of-type p {
   font-family: inter;
@@ -518,15 +519,15 @@ h1 {
 }
 
 .best_sell_prod_view_all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 60px;
   font-family: gilroymedium;
   font-size: 18px;
   line-height: 185%;
   color: #e58411;
   text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .best_sell_prod_view_all:hover {
   color: #d46a0f;
@@ -567,14 +568,13 @@ h1 {
   opacity: 0.8;
 }
 .experiences_text a {
+  display: flex;
+  align-items: center;
   font-family: gilroymedium;
   font-weight: 400;
   font-size: 14px;
   line-height: 185%;
   color: #e58411;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
   margin-top: 4px;
 }
 .experiences_text a:hover {
@@ -596,10 +596,10 @@ h1 {
 }
 
 .experiences_container {
-  padding: 240px 80px 270px 0;
   display: flex;
-  gap: 141px;
   align-items: center;
+  padding: 240px 80px 270px 0;
+  gap: 141px;
 }
 
 h2 {
@@ -614,16 +614,16 @@ h2 {
 }
 
 .materials_container {
-  padding-left: 80px;
   display: flex;
   justify-content: flex-end;
+  padding-left: 80px;
 }
 
 .materials_info_part {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 20px;
-  justify-content: center;
 }
 .materials_info_part p:first-of-type {
   font-family: gilroybold;
@@ -646,12 +646,12 @@ h2 {
   color: #1e1e1e;
 }
 .materials_info_part a {
+  display: flex;
+  align-items: center;
   font-family: gilroymedium;
   font-size: 14px;
   line-height: 185%;
   color: #e58411;
-  display: flex;
-  align-items: center;
   margin-top: 4px;
   text-decoration: none;
 }
@@ -695,9 +695,9 @@ h2 {
 
 .reviews_title {
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 20px;
-  align-items: center;
   margin-bottom: 60px;
 }
 .reviews_title p {
@@ -726,6 +726,9 @@ h2 {
 }
 
 .reviews_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url("../images/reviews_place.svg");
   top: 220px;
   left: 35px;
@@ -733,10 +736,7 @@ h2 {
   border-radius: 18px;
   width: 334px;
   height: 239px;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 .reviews_text p:first-of-type {

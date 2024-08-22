@@ -139,3 +139,9 @@ $main-color_e58411: #e58411;
     transition: 0.3s;
   }
 }
+
+@mixin display_jc_ai($display, $j-content, $a-items) {
+  display: $display;
+  justify-content: $j-content;
+  align-items: $a-items;
+}

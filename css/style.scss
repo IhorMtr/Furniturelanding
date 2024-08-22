@@ -99,7 +99,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: auto;
 }
 
 
@@ -166,9 +165,7 @@ nav {
 }
 
 .header_drop_down {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include var.display_jc_ai(flex, center, center);
 }
 
 .header_drop_down {
@@ -205,11 +202,10 @@ nav {
 
 
 .welcome_section_container {
+  @include var.display_jc_ai(flex, null, center);
   max-width: 1200px;
   margin: auto;
-  display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 
@@ -240,7 +236,7 @@ h1 {
 }
 
 .welcome_search_form {
-  display: flex;
+  @include var.display_jc_ai(flex, space-between, center);
   border: 0.86px solid rgba(255, 255, 255, 0.6);
   border-radius: 42px;
   padding: 8px 8px 8px 20px;
@@ -248,8 +244,6 @@ h1 {
   height: 56px;
   backdrop-filter: blur(8px);
   background: rgba(255, 255, 255, 0.15);
-  justify-content: space-between;
-  align-items: center;
   margin-top: 45px;
 }
 
@@ -287,7 +281,8 @@ h1 {
     height: 40px;
     background: var.$main-color_e58411;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
       background: #d46a0f;
       transition: 0.3s;
     }
@@ -296,6 +291,7 @@ h1 {
 
 
 .why_choose_us_container {
+  @include var.display_jc_ai(flex, null, center);
   max-width: 1200px;
   margin: auto;
   display: flex;
@@ -326,16 +322,14 @@ h1 {
   }
 
   a {
+    @include var.display_jc_ai(flex, null, center);
+    @include var.hover-effect(#d46a0f, "../images/grommet-icons_form-next-link_darker.svg");
     font-family: var.$main-font_medium;
     font-size: 14px;
     line-height: 185%;
     color: var.$main-color_e58411;
-    display: flex;
-    align-items: center;
     text-decoration: none;
     margin-top: 13px;
-
-    @include var.hover-effect(#d46a0f, "../images/grommet-icons_form-next-link_darker.svg");
 
     &:after {
       content: "";
@@ -359,12 +353,11 @@ h1 {
 }
 
 .best_sell_prod_container {
+  @include var.display_jc_ai(flex, null, center);
   max-width: 1200px;
   margin: auto;
-  display: flex;
   flex-direction: column;
   padding: 50px 0;
-  align-items: center;
 
   h2 {
     font-family: var.$main-font_bold;
@@ -380,24 +373,20 @@ h1 {
 }
 
 .product_selector {
+  @include var.display_jc_ai(flex, center, center);
   border-radius: 44px;
   padding: 6px;
   width: 348px;
   height: 57px;
   background: #eee;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 80px;
 
   li {
+    @include var.display_jc_ai(flex, center, center);
     border-radius: 32px;
     padding: 4px;
     width: 84px;
     height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     &:active {
       background: var.$main-color_fff;
@@ -447,9 +436,7 @@ h1 {
   }
 
   div:last-of-type {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include var.display_jc_ai(flex, space-between, center);
 
     p {
       font-family: var.$second-font_family;
@@ -504,17 +491,14 @@ h1 {
 
 
 .best_sell_prod_view_all {
+  @include var.display_jc_ai(flex, center, center);
+  @include var.hover-effect(#d46a0f, "../images/grommet-icons_form-next-link_darker.svg");
   margin-top: 60px;
   font-family: var.$main-font_medium;
   font-size: 18px;
   line-height: 185%;
   color: var.$main-color_e58411;
   text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @include var.hover-effect(#d46a0f, "../images/grommet-icons_form-next-link_darker.svg");
 
   &:after {
     content: "";
@@ -550,16 +534,14 @@ h1 {
   }
 
   a {
+    @include var.display_jc_ai(flex, null, center);
+    @include var.hover-effect(#d46a0f, "../images/grommet-icons_form-next-link_darker.svg");
     font-family: var.$main-font_medium;
     font-weight: 400;
     font-size: 14px;
     line-height: 185%;
     color: var.$main-color_e58411;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
     margin-top: 4px;
-    @include var.hover-effect(#d46a0f, "../images/grommet-icons_form-next-link_darker.svg");
 
     &:after {
       content: "";
@@ -574,10 +556,9 @@ h1 {
 }
 
 .experiences_container {
+  @include var.display_jc_ai(flex, null, center);
   padding: 240px 80px 270px 0;
-  display: flex;
   gap: 141px;
-  align-items: center;
 }
 
 h2 {
@@ -593,16 +574,14 @@ h2 {
 }
 
 .materials_container {
+  @include var.display_jc_ai(flex, flex-end, null);
   padding-left: 80px;
-  display: flex;
-  justify-content: flex-end;
 }
 
 .materials_info_part {
-  display: flex;
+  @include var.display_jc_ai(flex, center, null);
   flex-direction: column;
   gap: 20px;
-  justify-content: center;
 
   p {
     &:first-of-type {
@@ -630,15 +609,14 @@ h2 {
   }
 
   a {
+    @include var.display_jc_ai(flex, null, center);
+    @include var.hover-effect(#d46a0f, "../images/grommet-icons_form-next-link_darker.svg");
     font-family: var.$main-font_medium;
     font-size: 14px;
     line-height: 185%;
     color: var.$main-color_e58411;
-    display: flex;
-    align-items: center;
     margin-top: 4px;
     text-decoration: none;
-    @include var.hover-effect(#d46a0f, "../images/grommet-icons_form-next-link_darker.svg");
 
     &:after {
       content: "";
@@ -653,9 +631,7 @@ h2 {
 }
 
 .materials_photos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include var.display_jc_ai(flex, center, center);
 }
 
 .materials_photos_first {
@@ -673,10 +649,9 @@ h2 {
 }
 
 .reviews_title {
-  display: flex;
+  @include var.display_jc_ai(flex, null, center);
   flex-direction: column;
   gap: 20px;
-  align-items: center;
   margin-bottom: 60px;
 
   p {
@@ -698,9 +673,7 @@ h2 {
 }
 
 .reviews_articles {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include var.display_jc_ai(flex, center, center);
 
   article {
     position: relative;
@@ -708,6 +681,7 @@ h2 {
 }
 
 .reviews_text {
+  @include var.display_jc_ai(flex, center, center);
   background-image: url("../images/reviews_place.svg");
   top: 220px;
   left: 35px;
@@ -715,10 +689,7 @@ h2 {
   border-radius: 18px;
   width: 334px;
   height: 239px;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 
   p {
@@ -781,8 +752,7 @@ footer {
 }
 
 .footer_info_part {
-  display: flex;
-  justify-content: space-between;
+  @include var.display_jc_ai(flex, space-between, null);
 
   div {
     display: flex;
@@ -835,8 +805,7 @@ footer {
 }
 
 .footer_copyright {
-  display: flex;
-  justify-content: space-between;
+  @include var.display_jc_ai(flex, space-between, null);
 
   p {
     font-family: var.$third-font_family;
@@ -848,14 +817,13 @@ footer {
   }
 
   a {
+    @include var.hover-effect_without_img(#4d4d4d);
     font-family: var.$main-font_medium;
     font-size: 15px;
     line-height: 160%;
     color: var.$main-color_1e1e1e;
     opacity: 0.8;
     text-decoration: none;
-
-    @include var.hover-effect_without_img(#4d4d4d);
   }
 
   div {
