@@ -576,6 +576,7 @@ h1 {
   line-height: 185%;
   color: #e58411;
   margin-top: 4px;
+  text-decoration: none;
 }
 .experiences_text a:hover {
   color: #d46a0f;
