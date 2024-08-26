@@ -116,12 +116,14 @@ nav {
   ul {
     display: flex;
     gap: 63px;
-    z-index: 10;
 
     li {
+      a {
+        transition: 0.3s;
+      }
+
       &:hover a {
         color: #c0c0c0;
-        transition: 0.3s;
       }
     }
   }
@@ -177,11 +179,11 @@ nav {
     height: 18px;
     width: 18px;
     margin-left: 8px;
+    transition: 0.3s;
   }
 
   &:hover:after {
     background-image: url("../images/eva_arrow-ios-back-outline_grey.svg");
-    transition: 0.3s;
   }
 }
 
@@ -281,10 +283,10 @@ h1 {
     height: 40px;
     background: var.$main-color_e58411;
     cursor: pointer;
+    transition: 0.3s;
 
     &:hover {
       background: #d46a0f;
-      transition: 0.3s;
     }
   }
 }
@@ -330,6 +332,7 @@ h1 {
     color: var.$main-color_e58411;
     text-decoration: none;
     margin-top: 13px;
+    transition: 0.3s;
 
     &:after {
       content: "";
@@ -338,10 +341,12 @@ h1 {
       width: 48px;
       height: 24px;
       display: block;
-      margin-left: 13px;
+      margin-left: 3px;
+      transition: 0.3s;
     }
   }
 }
+
 
 .why_choose_us_container_articles {
   display: flex;
@@ -499,6 +504,7 @@ h1 {
   line-height: 185%;
   color: var.$main-color_e58411;
   text-decoration: none;
+  transition: 0.3s;
 
   &:after {
     content: "";
@@ -507,7 +513,8 @@ h1 {
     width: 48px;
     height: 24px;
     display: block;
-    margin-left: 12px;
+    margin-left: 3px;
+    transition: 0.3s;
   }
 }
 
@@ -543,6 +550,7 @@ h1 {
     color: var.$main-color_e58411;
     margin-top: 4px;
     text-decoration: none;
+    transition: 0.3s;
 
     &:after {
       content: "";
@@ -551,7 +559,8 @@ h1 {
       width: 48px;
       height: 24px;
       display: block;
-      margin-left: 13px;
+      margin-left: 3px;
+      transition: 0.3s;
     }
   }
 }
@@ -618,6 +627,7 @@ h2 {
     color: var.$main-color_e58411;
     margin-top: 4px;
     text-decoration: none;
+    transition: 0.3s;
 
     &:after {
       content: "";
@@ -626,7 +636,8 @@ h2 {
       width: 48px;
       height: 24px;
       display: block;
-      margin-left: 13px;
+      margin-left: 3px;
+      transition: 0.3s;
     }
   }
 }
@@ -785,6 +796,7 @@ footer {
 
   a {
     @include var.hover-effect_without_img(#4d4d4d);
+    transition: 0.3s;
   }
 
   h3 {
@@ -825,6 +837,7 @@ footer {
     color: var.$main-color_1e1e1e;
     opacity: 0.8;
     text-decoration: none;
+    transition: 0.3s;
   }
 
   div {

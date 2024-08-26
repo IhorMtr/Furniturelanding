@@ -112,6 +112,24 @@
 
 }
 
+@keyframes arrow_move {
+  0% {
+    margin-left: 3px;
+  }
+  25% {
+    margin-left: 6px;
+  }
+  50% {
+    margin-left: 9px;
+  }
+  75% {
+    margin-left: 11px;
+  }
+  100% {
+    margin-left: 13px;
+  }
+}
+
 $main-font_regular: gilroyregular;
 $main-font_medium: gilroymedium;
 $main-font_bold: gilroybold;
@@ -124,19 +142,17 @@ $main-color_e58411: #e58411;
 @mixin hover-effect($color, $icon-url) {
   &:hover {
     color: $color;
-    transition: 0.3s;
   }
 
   &:hover:after {
     background-image: url($icon-url);
-    transition: 0.3s;
+    animation: arrow_move 0.2s 1 ease-in-out forwards;
   }
 }
 
 @mixin hover-effect_without_img($color) {
   &:hover {
     color: $color;
-    transition: 0.3s;
   }
 }
 

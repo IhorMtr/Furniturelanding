@@ -56,6 +56,23 @@
   font-weight: normal;
   font-style: normal;
 }
+@keyframes arrow_move {
+  0% {
+    margin-left: 3px;
+  }
+  25% {
+    margin-left: 6px;
+  }
+  50% {
+    margin-left: 9px;
+  }
+  75% {
+    margin-left: 11px;
+  }
+  100% {
+    margin-left: 13px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .hidden-text {
     opacity: 0;

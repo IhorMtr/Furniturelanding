@@ -56,6 +56,23 @@
   font-weight: normal;
   font-style: normal;
 }
+@keyframes arrow_move {
+  0% {
+    margin-left: 3px;
+  }
+  25% {
+    margin-left: 6px;
+  }
+  50% {
+    margin-left: 9px;
+  }
+  75% {
+    margin-left: 11px;
+  }
+  100% {
+    margin-left: 13px;
+  }
+}
 img[src="images/akar-icons_search.svg"] {
   width: 18px;
   height: 18px;
@@ -170,11 +187,12 @@ nav {
 .header_container ul {
   display: flex;
   gap: 63px;
-  z-index: 10;
+}
+.header_container ul li a {
+  transition: 0.3s;
 }
 .header_container ul li:hover a {
   color: #c0c0c0;
-  transition: 0.3s;
 }
 
 .header_brand_name {
@@ -222,10 +240,10 @@ nav a {
   height: 18px;
   width: 18px;
   margin-left: 8px;
+  transition: 0.3s;
 }
 .header_drop_down:hover:after {
   background-image: url("../images/eva_arrow-ios-back-outline_grey.svg");
-  transition: 0.3s;
 }
 
 .header_shopping_cart {
@@ -316,10 +334,10 @@ h1 {
   height: 40px;
   background: #e58411;
   cursor: pointer;
+  transition: 0.3s;
 }
 .welcome_search_form button:hover {
   background: #d46a0f;
-  transition: 0.3s;
 }
 
 .why_choose_us_container {
@@ -360,14 +378,14 @@ h1 {
   color: #e58411;
   text-decoration: none;
   margin-top: 13px;
+  transition: 0.3s;
 }
 .why_choose_us_container a:hover {
   color: #d46a0f;
-  transition: 0.3s;
 }
 .why_choose_us_container a:hover:after {
   background-image: url("../images/grommet-icons_form-next-link_darker.svg");
-  transition: 0.3s;
+  animation: arrow_move 0.2s 1 ease-in-out forwards;
 }
 .why_choose_us_container a:after {
   content: "";
@@ -376,7 +394,8 @@ h1 {
   width: 48px;
   height: 24px;
   display: block;
-  margin-left: 13px;
+  margin-left: 3px;
+  transition: 0.3s;
 }
 
 .why_choose_us_container_articles {
@@ -528,14 +547,14 @@ h1 {
   line-height: 185%;
   color: #e58411;
   text-decoration: none;
+  transition: 0.3s;
 }
 .best_sell_prod_view_all:hover {
   color: #d46a0f;
-  transition: 0.3s;
 }
 .best_sell_prod_view_all:hover:after {
   background-image: url("../images/grommet-icons_form-next-link_darker.svg");
-  transition: 0.3s;
+  animation: arrow_move 0.2s 1 ease-in-out forwards;
 }
 .best_sell_prod_view_all:after {
   content: "";
@@ -544,7 +563,8 @@ h1 {
   width: 48px;
   height: 24px;
   display: block;
-  margin-left: 12px;
+  margin-left: 3px;
+  transition: 0.3s;
 }
 
 .experiences_text {
@@ -577,14 +597,14 @@ h1 {
   color: #e58411;
   margin-top: 4px;
   text-decoration: none;
+  transition: 0.3s;
 }
 .experiences_text a:hover {
   color: #d46a0f;
-  transition: 0.3s;
 }
 .experiences_text a:hover:after {
   background-image: url("../images/grommet-icons_form-next-link_darker.svg");
-  transition: 0.3s;
+  animation: arrow_move 0.2s 1 ease-in-out forwards;
 }
 .experiences_text a:after {
   content: "";
@@ -593,7 +613,8 @@ h1 {
   width: 48px;
   height: 24px;
   display: block;
-  margin-left: 13px;
+  margin-left: 3px;
+  transition: 0.3s;
 }
 
 .experiences_container {
@@ -655,14 +676,14 @@ h2 {
   color: #e58411;
   margin-top: 4px;
   text-decoration: none;
+  transition: 0.3s;
 }
 .materials_info_part a:hover {
   color: #d46a0f;
-  transition: 0.3s;
 }
 .materials_info_part a:hover:after {
   background-image: url("../images/grommet-icons_form-next-link_darker.svg");
-  transition: 0.3s;
+  animation: arrow_move 0.2s 1 ease-in-out forwards;
 }
 .materials_info_part a:after {
   content: "";
@@ -671,7 +692,8 @@ h2 {
   width: 48px;
   height: 24px;
   display: block;
-  margin-left: 13px;
+  margin-left: 3px;
+  transition: 0.3s;
 }
 
 .materials_photos {
@@ -821,9 +843,11 @@ footer {
   opacity: 0.8;
   text-decoration: none;
 }
+.footer_info_part a {
+  transition: 0.3s;
+}
 .footer_info_part a:hover {
   color: #4d4d4d;
-  transition: 0.3s;
 }
 .footer_info_part h3 {
   font-family: gilroybold;
@@ -860,10 +884,10 @@ footer {
   color: #1e1e1e;
   opacity: 0.8;
   text-decoration: none;
+  transition: 0.3s;
 }
 .footer_copyright a:hover {
   color: #4d4d4d;
-  transition: 0.3s;
 }
 .footer_copyright div {
   display: flex;
